@@ -1,0 +1,7 @@
+.recipes-wrapper {
+  display: flex;
+}
+
+.recipes-list-wrapper {
+  width: 50%;
+}

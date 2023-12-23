@@ -1,0 +1,11 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1232px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
