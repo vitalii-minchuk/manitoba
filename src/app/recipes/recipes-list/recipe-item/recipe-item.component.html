@@ -1,4 +1,7 @@
 <mat-card class="recipes-item-wrapper">
-  <mat-card-title>title</mat-card-title>
-  <mat-card-content>recipe-item works!</mat-card-content>
+  <mat-card-title>{{ recipe.name }}</mat-card-title>
+  <mat-card-content>{{ recipe.description }}</mat-card-content>
+  <mat-card-actions>
+    <button mat-mini-fab (click)="selectRecipe(recipe.id)">+</button>
+  </mat-card-actions>
 </mat-card>

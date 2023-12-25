@@ -1,0 +1,25 @@
+.recipe-detail-wrapper {
+  padding-top: 56px;
+  height: 50vh;
+  overflow: auto;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.recipe-detail-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.btns-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+

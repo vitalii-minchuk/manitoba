@@ -1,6 +1,4 @@
-
 <button mat-raised-button>add new</button>
-<div>
-  <app-recipe-item></app-recipe-item>
-
+<div class="recipes-content">
+  <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe" (selectedId)="onSelectRecipe($event)"></app-recipe-item>
 </div>

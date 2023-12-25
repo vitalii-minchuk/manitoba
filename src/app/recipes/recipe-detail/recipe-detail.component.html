@@ -1,1 +1,27 @@
-  <p>recipe-detail works!</p>
+  <div class="recipe-detail-wrapper">
+    <div class="recipe-detail-content">
+      <img [src]="selectedRecipe?.imagePath" style="height: 200px; width: 300px; object-fit: contain;" />
+      <div class="btns-wrapper">
+        <button mat-raised-button>edit</button>
+        <button mat-raised-button>delete</button>
+      </div>
+    </div>
+    <div>
+     {{ selectedRecipe?.description }}
+    </div>
+    <div>
+      ingredients
+    </div>
+    <div>
+      ingredients
+    </div>
+    <div>
+      ingredients
+    </div>
+    <div>
+      ingredients
+    </div>
+    <div>
+      ingredients
+    </div>
+  </div>

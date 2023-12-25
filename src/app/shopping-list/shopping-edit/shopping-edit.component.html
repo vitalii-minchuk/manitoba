@@ -1,1 +1,13 @@
-<p>shopping-edit works!</p>
+<mat-form-field>
+  <mat-label>Name</mat-label>
+  <input matInput [(ngModel)]="name">
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Amount</mat-label>
+  <input matInput [(ngModel)]="count">
+</mat-form-field>
+<div class="btns-wrapper">
+  <button mat-raised-button (click)="onAddNew()">save</button>
+  <button mat-raised-button>cancel</button>
+  <button mat-raised-button (click)="onClear()">clear</button>
+</div>
