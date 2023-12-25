@@ -1,5 +1,5 @@
 <div class="shopping-list-wrapper">
-  <app-shopping-edit></app-shopping-edit>
+  <app-shopping-edit (add)="addNewIngredient($event)"></app-shopping-edit>
   <ul>
     <li *ngFor="let ing of ingredients; index as i">{{i + 1}}. {{ing.name}} ({{ing.count}})</li>
   </ul>

@@ -1,6 +1,7 @@
 <div class="recipes-wrapper">
-  <app-recipes-list [recipes]="recipes" class="recipes-list-wrapper"></app-recipes-list>
-  <app-recipe-detail></app-recipe-detail>
+  <app-recipes-list [recipes]="recipes" (selectRecipe)="onSelectRecipe($event)" class="recipes-list-wrapper"></app-recipes-list>
+  <app-recipe-detail *ngIf="selectedRecipe" [selectedRecipe]="selectedRecipe"></app-recipe-detail>
+
 </div>
 <mat-divider class="divider"></mat-divider>
 

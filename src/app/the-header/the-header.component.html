@@ -2,6 +2,10 @@
   <mat-toolbar color="primary">
     <div class="header-wrapper">
       <span>My App</span>
+      <nav>
+        <button mat-button (click)="goToShop()">shopping</button>
+        <button mat-button (click)="goToRecipe()">recipes</button>
+      </nav>
       <span class="example-spacer"></span>
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
