@@ -23,6 +23,5 @@ export class RecipesComponent implements OnInit {
   onSelectRecipe(id: number): void {
     const recipe = this.recipes.find(el => el.id === id)
     this.selectedRecipe = recipe ?? null
-    console.log(id)
   }
 }

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-the-header',
@@ -6,13 +7,13 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './the-header.component.css',
 })
 export class TheHeaderComponent {
-  @Output() onChangeComponent = new EventEmitter<'rec' | 'shop'>()
+  constructor(private router: Router) {}
 
   goToShop() {
-    this.onChangeComponent.emit('shop')
+    this.router.navigate(['shop'])
   }
 
   goToRecipe() {
-    this.onChangeComponent.emit('rec')
+    this.router.navigate([''])
   }
 }
