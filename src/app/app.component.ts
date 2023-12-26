@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'manitoba';
-  shownComponent: 'shop' | 'rec' = 'rec'
-
-  setShownComponent(component: 'shop' | 'rec') {
-    console.log(component)
-    this.shownComponent = component
-  }
 }

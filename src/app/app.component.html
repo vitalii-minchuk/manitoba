@@ -1,9 +1,5 @@
 <main>
-  <app-the-header (onChangeComponent)="setShownComponent($event)"></app-the-header>
-  <div class="content-wrapper">
-    <app-recipes *ngIf="shownComponent === 'rec'"></app-recipes>
-    <app-shopping-list *ngIf="shownComponent == 'shop'"></app-shopping-list>
-  </div>
+  <app-the-header></app-the-header>
+  <router-outlet></router-outlet>
 </main>
 
-<router-outlet></router-outlet>
